@@ -1,4 +1,11 @@
 :root {
     --color-negro:black;
     --color-blanco:white;
+    --color-vinotinto:rgb(126, 26, 26);
+    --color-crema: rgb(241, 229, 229);
+    --color-azul:rgb(11, 94, 202);
+    --color-verde:green;
+    --color-amarillo:yellow;
+    --color-naranja:orange;
+    --color-morado:purple;
 }

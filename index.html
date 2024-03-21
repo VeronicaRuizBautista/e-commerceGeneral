@@ -3,10 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerceGeneral</title>ç
+    <title>e-commerceGeneral</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="icono">
+                <button onclick="botonMenu()" id="abrir" class="abrir">
+                    <i class='bx bx-menu'></i>
+                </button> 
+            </div>
+            <ul>
+                <a href="#pag1">Producto1</a>
+                <a href="#pag2">Producto2</a>
+                <a href="#pag3">Producto3</a>
+                <a href="#pag4">Producto4</a>
+                <a href="#">Producto5</a>
+                <a href="#">Producto6</a>
+                <a href="#">Producto7</a>
+                <a href="#">Producto8</a>
+                <a href="#">...</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pag1" id="pag1">
+            <div class="ilera">
+                <div><img src="storage/img/abrigo02.png" alt=""></div>
+                <div><img src="storage/img/abrigo04.png" alt=""></div>
+                <div><img src="storage/img/abrigo05.png" alt=""></div>
+                <div><img src="storage/img/abrigo01.png" alt=""></div>
+            </div>
+            <div class="img">
+                <img src="storage/img/abrigo03.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Abrigo azul imperneable</h1>
+                <div class="colores">
+                    <div class="azul"></div>
+                    <div class="verde"></div>
+                    <div class="amarillo"></div>
+                    <div class="naranja"></div>
+                    <div class="morado"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis architecto iure, numquam consectetur praesentium labore eligendi? Voluptate deleniti aspernatur dolore sint nemo minus blanditiis officiis! Quod in optio similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe totam perferendis repellat vero. Animi, adipisci sed suscipit quia ullam laborum laudantium sunt recusandae consequatur veniam quod! Sequi, repellendus sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus, facere distinctio aperiam non vero similique? Eius voluptatem nostrum alias. Nisi velit id exercitationem, fugiat ipsum natus blanditiis minus tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem ad consequuntur porro a et eligendi enim inventore explicabo temporibus! Veritatis hic corporis blanditiis illum at, officiis neque est eos.</p>
+                <div class="precio">
+                    <p>$ 100.000 <sub>$99.99</sub></p>
+                </div>
+                <div class="btn">
+                    <button>Obtener</button>
+                </div>
+            </div>
+        </section>
+        <section class="pag2" id="pag2">
+            <div class="ilera">
+                <div><img src="storage/img/camisa01.png" alt=""></div>
+                <div><img src="storage/img/camisa02.png" alt=""></div>
+                <div><img src="storage/img/camisa03.png" alt=""></div>
+                <div><img src="storage/img/camisa04.png" alt=""></div>
+            </div>
+            <div class="img">
+                <img src="storage/img/camisadeportiva.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Camiseta deportiva</h1>
+                <div class="colores">
+                    <div class="azul"></div>
+                    <div class="verde"></div>
+                    <div class="amarillo"></div>
+                    <div class="naranja"></div>
+                    <div class="morado"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis architecto iure, numquam consectetur praesentium labore eligendi? Voluptate deleniti aspernatur dolore sint nemo minus blanditiis officiis! Quod in optio similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe totam perferendis repellat vero. Animi, adipisci sed suscipit quia ullam laborum laudantium sunt recusandae consequatur veniam quod! Sequi, repellendus sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus, facere distinctio aperiam non vero similique? Eius voluptatem nostrum alias. Nisi velit id exercitationem, fugiat ipsum natus blanditiis minus tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem ad consequuntur porro a et eligendi enim inventore explicabo temporibus! Veritatis hic corporis blanditiis illum at, officiis neque est eos.</p>
+                <div class="precio">
+                    <p>$ 100.000 <sub>$99.99</sub></p>
+                </div>
+                <div class="btn">
+                    <button>Obtener</button>
+                </div>
+            </div>
+        </section>
+        <section class="pag3" id="pag3">
+            <div class="ilera">
+                <div><img src="storage/img/pantalon01.png" alt=""></div>
+                <div><img src="storage/img/pantalon02.png" alt=""></div>
+                <div><img src="storage/img/pantalon03.png" alt=""></div>
+                <div><img src="storage/img/pantalon04.png" alt=""></div>
+            </div>
+            <div class="img">
+                <img src="storage/img/cargo_caqui_1.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Pantalon casul, monocromatico</h1>
+                <div class="colores">
+                    <div class="azul"></div>
+                    <div class="verde"></div>
+                    <div class="amarillo"></div>
+                    <div class="naranja"></div>
+                    <div class="morado"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis architecto iure, numquam consectetur praesentium labore eligendi? Voluptate deleniti aspernatur dolore sint nemo minus blanditiis officiis! Quod in optio similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe totam perferendis repellat vero. Animi, adipisci sed suscipit quia ullam laborum laudantium sunt recusandae consequatur veniam quod! Sequi, repellendus sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus, facere distinctio aperiam non vero similique? Eius voluptatem nostrum alias. Nisi velit id exercitationem, fugiat ipsum natus blanditiis minus tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem ad consequuntur porro a et eligendi enim inventore explicabo temporibus! Veritatis hic corporis blanditiis illum at, officiis neque est eos.</p>
+                <div class="precio">
+                    <p>$ 100.000 <sub>$99.99</sub></p>
+                </div>           
+                <div class="btn">
+                    <button>Obtener</button>
+                </div>
+            </div>
+        </section>
+        <section class="pag3">
+            <div class="ilera">
+
+            </div>
+            <div class="img">
+
+            </div>
+            <div class="texto">
+                <h1>Chaqueta de cuero</h1>
+                <div class="colores">
+                    <div class="azul"></div>
+                    <div class="verde"></div>
+                    <div class="amarillo"></div>
+                    <div class="naranja"></div>
+                    <div class="morado"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis architecto iure, numquam consectetur praesentium labore eligendi? Voluptate deleniti aspernatur dolore sint nemo minus blanditiis officiis! Quod in optio similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe totam perferendis repellat vero. Animi, adipisci sed suscipit quia ullam laborum laudantium sunt recusandae consequatur veniam quod! Sequi, repellendus sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatibus, facere distinctio aperiam non vero similique? Eius voluptatem nostrum alias. Nisi velit id exercitationem, fugiat ipsum natus blanditiis minus tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem ad consequuntur porro a et eligendi enim inventore explicabo temporibus! Veritatis hic corporis blanditiis illum at, officiis neque est eos.</p>
+                <div class="precio">
+                    <p>$ 100.000 <sub>$99.99</sub></p>
+                </div>
+                <div class="btn">
+                    <button>Obtener</button>
+                </div>
+            </div>
+        </section>
+        <section class="pag4" id="pag4">
+            <div class="ilera">
+                <div><img src="storage/img/chaqueta01.png" alt=""></div>
+                <div><img src="storage/img/chaqueta02.png" alt=""></div>
+                <div><img src="storage/img/chaqueta03.png" alt=""></div>
+                <div><img src="storage/img/chaqueta04.png" alt=""></div>
+            </div>
+            <div class="img">
+                <img src="storage/img/caquetacuero.png" alt="">
+            </div>
+            <div class="texto">
+                <h1>Chaqueta de cuero</h1>
+                <div class="colores">
+                    <div class="azul"></div>
+                    <div class="verde"></div>
+                    <div class="amarillo"></div>
+                    <div class="naranja"></div>
+                    <div class="morado"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis architecto iure, numquam consectetur praesentium labore eligendi? Voluptate deleniti aspernatur dolore sint nemo minus blanditiis officiis! Quod in optio similique.</p>
+                <div class="precio">
+                    <p>$ 100.000 <sub>$99.99</sub></p>
+                </div>
+                <div class="btn">
+                    <button>Obtener</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

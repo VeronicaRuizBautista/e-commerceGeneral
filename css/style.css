@@ -1,1 +1,246 @@
 @import url(variables.css);
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', 'sans-serif';
+}
+body{
+    font-size: 18px;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--color-vinotinto);
+    position: fixed;
+    top: 0;
+}
+header nav .icono{
+    display: none;
+}
+header nav ul{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header nav ul a{
+    color: var(--color-blanco);
+}
+
+main section{
+    padding-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-crema);
+}
+main .pag1{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ilera img texto"
+    ;
+}
+main .pag1 .ilera{
+    height: 80vh;
+    grid-area: ilera;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main section .ilera img{
+    margin-left: 2em;
+    outline: solid var(--color-vinotinto);
+    width: 10em;
+    height: 10em;
+}
+main .pag1 .img{
+    height: 90vh;
+    grid-area: img;
+    display: flex;
+    width: 35em;
+    height: 40em;
+    margin-top: 3em;
+
+}
+main section.img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main .pag1 .texto {
+    margin-top: 3em;
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35vw;
+    justify-content: space-around;
+}
+
+main .colores  {
+    display: flex;
+    width: 10em;
+    justify-content: space-between;
+}
+main .colores div{
+    width: 2em;
+    height: 2em;
+    outline: solid var(--color-negro);
+    border-radius: 50px;
+}
+main section .precio p{
+    color: var(--color-verde);
+    font-size: 2em;
+}
+main section .btn button{
+    background: var(--color-verde);
+    width: 8em;
+    height: 3em;
+    color: var(--color-blanco);
+    border: none;
+}
+main .colores .azul{
+    background-color: var(--color-azul);
+}
+main .colores .verde{
+    background-color: var(--color-verde);
+}
+main .colores .amarillo{
+    background-color: var(--color-amarillo);
+}
+main .colores .naranja{
+    background-color: var(--color-naranja);
+}
+main .colores .morado{
+    background-color: var(--color-morado);
+}
+
+main .pag2{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ilera2 img2 texto2"
+    ;
+}
+main .pag2 .ilera{
+    height: 80vh;
+    grid-area: ilera2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main .pag2 .img{
+    height: 90vh;
+    grid-area: img2;
+    display: flex;
+    width: 35em;
+    height: 40em;
+    margin-top: 3em;
+}
+main .pag2 .texto {
+    margin-top: 3em;
+    grid-area: texto2;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35vw;
+    justify-content: space-around;
+}
+main .pag3{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ilera3 img3 texto3"
+    ;
+}
+main .pag3 .ilera{
+    height: 80vh;
+    grid-area: ilera3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main .pag3 .img{
+    height: 90vh;
+    grid-area: img3;
+    display: flex;
+    width: 35em;
+    height: 40em;
+    margin-top: 3em;
+}
+main .pag3 .texto {
+    margin-top: 3em;
+    grid-area: texto3;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35vw;
+    justify-content: space-around;
+}
+
+main .pag4{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: .5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "ilera4 img4 texto4"
+    ;
+}
+main .pag4 .ilera{
+    height: 80vh;
+    grid-area: ilera4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main .pag4 .img{
+    height: 90vh;
+    grid-area: img4;
+    display: flex;
+    width: 35em;
+    height: 40em;
+    margin-top: 3em;
+}
+main .pag4 .texto {
+    margin-top: 3em;
+    grid-area: texto4;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 35vw;
+    justify-content: space-around;
+}
+@media (width <= 700px) {
+    body {
+        font-size: 15px;
+    }
+    header nav ul{
+        display: none;
+    }
+    header nav .icono{
+        display: flex;
+        height: 4em;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav .icono button {
+        background-color: var(--color-crema);
+        width: 1.5em;
+        height: 1.5em;
+        border: none;
+        font-size: 2em;
+    }
+}
