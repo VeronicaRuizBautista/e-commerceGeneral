@@ -13,3 +13,7 @@ function restar(id) {
     contador--;
     document.getElementById(id).innerText = contador;
 }
+function botonObtener() {
+    var btn = document.getElementById("obtener");
+    btn.classList.toggle("obtenervisible");
+    }

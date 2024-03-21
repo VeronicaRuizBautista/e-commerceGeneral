@@ -232,9 +232,34 @@ main section .texto button{
     width: 5em;
     height: 2em;
 }
+.obtener{
+    display: none;
+}
+.obtenervisible{
+    margin-top: 10vh;
+    margin-left: 5vw;
+    display: flex;
+    position: fixed;
+    width: 40vh;
+    height: 40vh;
+    outline: solid var(--color-vinotinto);
+    background-color: var(--color-crema);
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: .8em;
+}
+.obtenervisible img{
+    width: 3em;
+    height: 4em;
+}
+.obtenervisible button{
+    background-color: var(--color-verde);
+    width: 5em;
+    height: 2em;
+}
 .verdetalles{
     margin-top: 10vh;
-    margin-left: 20vw;
+    margin-left: 25vw;
     display: flex;
     position: fixed;
     width: 40vh;
