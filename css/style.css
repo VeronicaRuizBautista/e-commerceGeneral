@@ -7,13 +7,13 @@
     font-family: 'Poppins', 'sans-serif';
 }
 body{
+    width: 100%;
     font-size: 18px;
 }
 
 header{
     width: 100%;
     height: 10vh;
-    width: 100%;
     background-color: var(--color-vinotinto);
     position: fixed;
     top: 0;
@@ -223,9 +223,12 @@ main .pag4 .texto {
     width: 35vw;
     justify-content: space-around;
 }
-@media (width <= 700px) {
+@media (width <= 800px) {
     body {
         font-size: 15px;
+    }
+    header{
+        height: 8vh;
     }
     header nav ul{
         display: none;
@@ -242,5 +245,180 @@ main .pag4 .texto {
         height: 1.5em;
         border: none;
         font-size: 2em;
+    }
+    header .visible
+    {
+        display: flex;
+        background-color: var(--color-vinotinto);
+        height: 50vh;
+        flex-direction: column;
+    }
+    main .pag1 .ilera{
+        height: 50vh;
+        grid-area: ilera;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    main section .ilera img{
+        margin-left: 2em;
+        outline: solid var(--color-vinotinto);
+        width: 3em;
+        height: 3em;
+    }
+    main .pag1{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "ilera img "
+        "texto texto"
+        ;
+    }
+    main .pag1 .img{
+        margin-top: 2em;
+        margin-left: 3em;
+        height: 30vh;
+    }
+
+    img {
+        width: 15em;
+        height:18em;
+    }
+    main .pag1 .texto {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        height:40vh;
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 1em;
+    }
+    main .colores{
+        width: 20vw;
+        padding: 10px;
+    }
+    main .colores div{
+        width: 1em;
+        height: 1em;
+    }
+    main section .precio p{
+        font-size: 1em;
+    }
+    main section .btn{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    main section .btn button{
+        background: var(--color-verde);
+        width: 5em;
+        height: 2em;
+        color: var(--color-blanco);
+        border: none;
+    }
+    main .pag2{
+        padding-top: 6em;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "ilera2 img2 "
+        "texto2 texto2"
+        ;
+    }
+    main .pag3{
+        padding-top: 10em;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "ilera3 img3 "
+        "texto3 texto3"
+        ;
+    }
+    main .pag4{
+        padding-top: 15em;
+        height: 150vh;
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "ilera4 img4 "
+        "texto4 texto4"
+        ;
+    }
+    main .pag2 .ilera{
+        height: 50vh;
+        grid-area: ilera2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main .pag2 .img{
+        margin-top: 2em;
+        margin-left: 3em;
+        grid-area: img2;
+        height: 30vh;
+    }
+    main .pag2 .texto {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        grid-area: texto2;
+        height:40vh;
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 1em;
+    }
+    main .pag3 .ilera{
+        height: 50vh;
+        grid-area: ilera3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main .pag3 .img{
+        margin-top: 2em;
+        margin-left: 3em;
+        grid-area: img3;
+        height: 30vh;
+    }
+    main .pag3 .texto {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        grid-area: texto3;
+        height:40vh;
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 1em;
+    }
+    main .pag4 .ilera{
+        height: 50vh;
+        grid-area: ilera4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    main .pag4 .img{
+        margin-top: 2em;
+        margin-left: 3em;
+        grid-area: img4;
+        height: 30vh;
+    }
+    main .pag4 .texto {
+        margin-top: -30em;
+        display: flex;
+        flex-direction: column;
+        grid-area: texto4;
+        height:40vh;
+        width: 50%;
+        justify-content: space-around;
+        margin-left: 1em;
     }
 }
